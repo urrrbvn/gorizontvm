@@ -1,7 +1,11 @@
 import {useForm} from 'react-hook-form'
 import s from './AuthForm.module.scss'
+import { useNavigate } from 'react-router-dom'
 
 function AuthForm(){
+
+    let navigate = useNavigate()
+
 
     const {
         register,
@@ -46,6 +50,8 @@ function AuthForm(){
                         message: 'Указан не верный пароль'
                     }
                 })}/>
+
+                <button onClick={() => navigate('/main')}>GO</button>
             </form>
         </div>
     )
