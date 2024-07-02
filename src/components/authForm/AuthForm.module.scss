@@ -1,0 +1,39 @@
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px;
+    width: 500px;
+    box-shadow: 5px 5px 5px  rgb(199, 198, 198);
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.warning_text{
+    text-align: end;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.info_text{
+    color:gray;
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px; 
+}
+
