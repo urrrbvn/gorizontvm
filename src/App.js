@@ -1,17 +1,16 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import NavigationComponent from './components/navigationComponent/NavigationComponent';
+import AuthForm from './components/authForm/AuthForm';
+import MainPage from './pages/MainPage/MainPage';
 
 function App() {
   return (
     <>
-      <NavigationComponent/>
       <Router>
         <Routes>
-          <Route path='/host'/>
-          <Route path='/manage'/>
-          <Route path='/monitor'/>
+        <Route path='/' element={<AuthForm/>}/>
+        <Route path='/main' element={<MainPage/>}/>
         </Routes>
       </Router>
     </>
