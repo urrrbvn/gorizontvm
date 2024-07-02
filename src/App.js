@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import NavigationComponent from './components/navigationComponent/NavigationComponent';
 import AuthForm from './components/authForm/AuthForm';
 
 function App() {
   return (
-    <div>
+    <>
+      <NavigationComponent/>
       <Router>
         <Routes>
           <Route path='/' element={<AuthForm/>}/>
@@ -14,8 +16,9 @@ function App() {
           <Route path='/monitor'/>
         </Routes>
       </Router>
-    </div>
+    </>
   );
 }
 
 export default App;
+``
